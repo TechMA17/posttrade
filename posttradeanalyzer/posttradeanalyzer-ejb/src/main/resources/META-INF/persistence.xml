@@ -23,8 +23,14 @@
 
    <persistence-unit name="primary" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/posttradeanalyzerDS</jta-data-source>
+        <class>com.citi.posttradeanalyzer.model.OrderLastTransactTime</class>
+        <class>com.citi.posttradeanalyzer.model.CanceledTrade</class>
         <class>com.citi.posttradeanalyzer.model.ExecutionReport</class>
         <class>com.citi.posttradeanalyzer.model.ExecutionReportPK</class>
         <class>com.citi.posttradeanalyzer.model.OrderSingle</class>
+        <class>com.citi.posttradeanalyzer.model.CompletedOrder</class>
+        <class>com.citi.posttradeanalyzer.model.TradeVolumeView</class>
+        <class>com.citi.posttradeanalyzer.model.VampPriceTimePairView</class>
+        <class>com.citi.posttradeanalyzer.model.VwampView</class>
     </persistence-unit>
 </persistence>
